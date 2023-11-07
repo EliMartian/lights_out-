@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Lights Out!</string>
+    <string name="analysis_icon">Analysis</string>
+    <string name="history_icon">History</string>
+    <string name="tips_icon">Tips</string>
+    <string name="measurement_icon">Measurement</string>
+    <string name="home_icon">Home</string>
+
+    <string name="accessibility_tabs_format_selected">Tab: %s</string>
+    <string name="accessibility_tabs_format">Tab %s</string>
+    <string name="accessible_tabs">Contains %d tabs; number %d is selected </string>
+
+    <!--App Screen Strings-->
+    <string name="tab_analysis_page">tab_analysis_page</string>
+    <string name="tab_history_page">tab_analysis_page</string>
+    <string name="tab_tips_page">tab_analysis_page</string>
+    <string name="tab_measurement_page">tab_analysis_page</string>
+    <string name="tab_home_page">tab_analysis_page</string>
+    <string name="home_transition">Showing Home Screen</string>
+    <string name="tips_transition">Showing Tips Screen</string>
+    <string name="history_transition">Showing History Screen</string>
+    <string name="measurement_transition">Showing Measurement Screen</string>
+
+    <!--History Screen Strings-->
+    <string name="history_greeting">History:</string>
+    <string name="history_info">You currently have no history available. My developer
+    did not have time to finish this, but was able to finish their minimum viable product, which
+    did not incorporate me sadly :(</string>
+
+    <!--Measurement Screen Strings-->
+    <string name="measurement_greeting_title">Measurement:</string>
+    <string name="measurement_btn">Take a new measurement</string>
+
+    <!--Home Screen Strings-->
+    <string name="home_greeting">Welcome to Lights Out! </string>
+    <string name="home_information">Lights Out! is an app that
+        helps you create and maintain good eye-care practices before bedtime,
+        specifically by helping you set your screen brightness based upon your
+        ambient lighting environment. </string>
+    <string name="home_nav_prompt">Feel free to navigate between app screens
+        using the navigation bar at the bottom of the screen.</string>
+    <string name="electricity_pic">Picture of charging electricity triangle</string>
+
+    <!--Tips Screen Strings-->
+    <string name="tips_greeting">Tips:</string>
+    <string name="tips_info_1">Take frequent breaks by using the “20-20-20” rule.
+        Every 20 minutes look away from your screen and look at an object 20 feet
+        away for at least 20 seconds. This gives your eyes a chance to reset
+        and replenish themselves.</string>
+    <string name="tips_link_aao_1">Source 1: <a href="https://www.aao.org/eye-health/tips-prevention/digital-devices-your-eyes">AAO</a></string>
+    <string name="tips_link_aao_2">Source 2: <a href="https://www.aao.org/eye-health/tips-prevention/digital-devices-your-eyes">AAO</a></string>
+    <string name="tips_link_aao_3">Source 3: <a href="https://www.aao.org/eye-health/tips-prevention/digital-devices-your-eyes">AAO</a></string>
+    <string name="tips_link_aao_4">Source 4: <a href="https://www.aao.org/eye-health/tips-prevention/digital-devices-your-eyes">AAO</a></string>
+    <string name="tips_link_aao_5">Source 5: <a href="https://www.aao.org/eye-health/tips-prevention/digital-devices-your-eyes">AAO</a></string>
+    <string name="tips_info_2">Use artificial tears to lubricate your eyes
+        when they feel dry.</string>
+    <string name="tips_info_3">Keep your distance. Sit about 25 inches
+        or at arm’s length from
+        your screen and adjust its height so you’re looking slightly downward at it.</string>
+    <string name="tips_info_4">Reduce glare and brightness. Devices with
+        glass screens can cause glare.To reduce glare, consider a matte
+        screen filter for your device. Adjusting the brightness
+        and contrast of your screen and dimming the lighting near your screen can
+        also help reduce eye strain.</string>
+    <string name="tips_info_5">Wear eyeglasses. If you wear contact lenses,
+        you already know they can increase dryness and irritation.
+        To reduce these symptoms, try wearing eyeglasses instead
+        when working on a computer for longer periods.</string>
+
+
+    <!--Light / Dark Screen Strings -->
+    <string name="dark_greeting">Your Environment is Dark... Time for Lights Out!</string>
+    <string name="dark_info">It looks like your ambient environment is dark based upon
+    the light sensor reading on your device! Consider lowering your device\'s brightness
+    settings to reduce eyestrain in your environment.</string>
+    <string name="dark_transition">Showing Dark Environment Screen</string>
+    <string name="bright_transition">Showing Bright Environment Screen</string>
+
+    <string name="bright_greeting">Your Environment is Bright!</string>
+    <string name="bright_info">It looks like your ambient environment is bright based upon
+    the light sensor reading on your device! Consider maintaining or increasing your device\'s brightness
+    settings to reduce eyestrain in your bright environment.</string>
+
+    <!--Measurement Strings -->
+    <string name="measurement_greeting">Click below to take a measurement of the
+        ambient light in your environment!</string>
+    <string name="measurement_info">You will receive personalized feedback based on your
+    current ambient light level in your environment, and a suggestion as to what your device brightness
+    should be based upon that reading.</string>
+
+
+
+</resources>
+ app/src/main/res/values/styles.xml
+ Download
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

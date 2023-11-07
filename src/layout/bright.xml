@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/tab_contents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_nav"
+
+            android:background="@color/trans"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bright_greeting"
+                android:paddingLeft="@dimen/content_margin_large"
+                android:paddingTop="@dimen/content_margin_large"
+                android:paddingBottom="@dimen/content_margin_large"
+                />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/nav_btn_width"
+                android:layout_height="@dimen/nav_btn_height"
+                android:layout_gravity="center"
+                android:contentDescription="@string/electricity_pic"
+                android:background="@color/darkGrey"
+                android:tint="@color/yellow"
+                app:srcCompat="@android:drawable/ic_lock_idle_low_battery"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bright_info"
+                android:paddingLeft="@dimen/content_margin_large"
+                android:paddingTop="@dimen/content_margin_large"
+                android:paddingBottom="@dimen/content_margin_large"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

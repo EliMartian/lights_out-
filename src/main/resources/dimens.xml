@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="content_margin">17dp</dimen>
+    <dimen name="content_margin_large">32dp</dimen>
+    <dimen name="nav_btn_width">52dp</dimen>
+    <dimen name="nav_btn_height">52dp</dimen>
+    <dimen name="bottom_tips_height">64dp</dimen>
+    <dimen name="measurement_btn_width">144dp</dimen>
+    <dimen name="measurement_btn_height">100dp</dimen>
+    <dimen name="header">32dp</dimen>
+    <dimen name="content">14dp</dimen>
+    <dimen name="sensor_delay">500</dimen>
+    <dimen name="measurement_offset">250dp</dimen>
+</resources>

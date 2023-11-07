@@ -1,0 +1,63 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/bottom_nav"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <ImageButton
+        android:id="@+id/tab_home_page"
+        android:layout_width="@dimen/nav_btn_width"
+        android:layout_height="@dimen/nav_btn_height"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:background="@color/darkGrey"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/home_icon"
+        app:srcCompat="@android:drawable/ic_menu_view" />
+
+    <ImageButton
+        android:id="@+id/tab_tips_page"
+        android:layout_width="@dimen/nav_btn_width"
+        android:layout_height="@dimen/nav_btn_height"
+        android:background="@color/darkGrey"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:contentDescription="@string/tips_icon"
+        android:scaleType="fitCenter"
+        android:layout_weight="1"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageButton
+        android:id="@+id/tab_history_page"
+        android:contentDescription="@string/history_icon"
+        android:scaleType="fitCenter"
+        android:layout_width="@dimen/nav_btn_width"
+        android:background="@color/darkGrey"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:layout_height="@dimen/nav_btn_height"
+        android:layout_weight="1"
+        app:srcCompat="@android:drawable/ic_menu_recent_history" />
+
+    <ImageButton
+        android:id="@+id/tab_measurement_page"
+        android:contentDescription="@string/measurement_icon"
+        android:layout_width="@dimen/nav_btn_width"
+        android:background="@color/darkGrey"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:layout_height="@dimen/nav_btn_height"
+        android:scaleType="fitCenter"
+        android:layout_weight="1"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+</LinearLayout>

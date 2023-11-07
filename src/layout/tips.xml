@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_tips_contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/tab_contents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_nav"
+            android:background="@color/trans"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/header"
+                android:text="@string/tips_greeting"
+                android:paddingLeft="@dimen/content_margin_large"
+                android:paddingRight="@dimen/content_margin_large"
+                android:paddingBottom="@dimen/content_margin_large"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_info_1"
+                android:textSize="@dimen/content"
+                android:paddingLeft="@dimen/content_margin_large"
+                android:paddingBottom="@dimen/content_margin_large"
+                />
+            <!--CITATION: below TextView inspired (but changed) by the following StackOverflow post
+            to get clickable link to work (other TextView links in this file are
+            also influenced since I am copying my own version for the other ones, and my
+            own version was inspired (but changed) by this link:
+             https://stackoverflow.com/questions/10246366/autolink-inside-a-textview-in-android-->
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tips_link_1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/content_margin_large"
+                android:textColor="@color/black"
+                android:textColorLink="@color/colorPrimary"
+                android:linksClickable="true"
+                android:text="@string/tips_link_aao_1" />
+            <!--NOTE: inspired (and changed) code completed -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_info_2"
+                android:textSize="@dimen/content"
+                android:paddingLeft="@dimen/content_margin_large"
+                android:paddingBottom="@dimen/content_margin_large"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tips_link_2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textColorLink="@color/colorPrimary"
+                android:paddingBottom="@dimen/content_margin_large"
+                android:linksClickable="true"
+                android:text="@string/tips_link_aao_2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_info_3"
+                android:textSize="@dimen/content"
+                android:paddingLeft="@dimen/content_margin_large"
+                android:paddingBottom="@dimen/content_margin_large"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tips_link_3"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textColorLink="@color/colorPrimary"
+                android:paddingBottom="@dimen/content_margin_large"
+                android:linksClickable="true"
+                android:text="@string/tips_link_aao_3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_info_4"
+                android:textSize="@dimen/content"
+                android:paddingLeft="@dimen/content_margin_large"
+                android:paddingBottom="@dimen/content_margin_large"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tips_link_4"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textColorLink="@color/colorPrimary"
+                android:paddingBottom="@dimen/content_margin_large"
+                android:linksClickable="true"
+                android:text="@string/tips_link_aao_4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips_info_5"
+                android:textSize="@dimen/content"
+                android:paddingLeft="@dimen/content_margin_large"
+                android:paddingBottom="@dimen/content_margin_large"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tips_link_5"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textColorLink="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingBottom="@dimen/bottom_tips_height"
+                android:linksClickable="true"
+                android:text="@string/tips_link_aao_5" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
